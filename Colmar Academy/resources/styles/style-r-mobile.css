@@ -1,0 +1,98 @@
+/* See palette.txt for colour palette */
+
+@media only screen and (max-width: 760px) {
+  .not-mobile {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .mobile-flex {
+    display: flex;
+  }
+  .info-feature {
+    display: block;
+  }
+  .fleximg.mobile {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  /* ========== Header ========== */
+
+  #mainheader #action-section {
+    flex-grow: 1;
+  }
+
+  #mainheader #action-section > .mobile-flex {
+    flex-grow: 1;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  #mainheader #logo-section.not-mobile {
+    display: none; /* Mitigate old Chrome fix */
+  }
+
+  /* ========== Jumbotron ========== */
+  .jumbo-feature {
+    display: block;
+    padding: 0;
+  }
+
+  .jumbo-img {
+    width: 100%;
+    font-size: 0;
+  }
+
+  .jumbo-content {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .jumbo-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .jumbo-content .button {
+    margin: 0 auto;
+  }
+
+  /* ========== Information ========== */
+
+  .info-features {
+    width: 100%;
+  }
+
+  /* ========== Start Learning ========== */
+
+  #startlearning .courses {
+    display: block;
+  }
+
+  #startlearning .course {
+    width: 90%;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    background-color: #BD9B2D;
+  }
+
+  #startlearning .course h3 {
+    font-size: 1rem;
+  }
+
+  /* ========== Footer/copyright ========== */
+  #mainfooter {
+    display: block;
+    font-size: .75rem;
+  }
+
+  /* ========== High-contrast mode ========== */
+
+  html.high-contrast #startlearning .course {
+    background-color: #fff;
+  }
+}
